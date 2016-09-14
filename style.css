@@ -70,8 +70,9 @@ nav ul li a:hover {
 }
 
 .col {
-    width: 21%;
-    float: left;
+    width: 20%;
+    display: inline-block;
+    vertical-align: top;
     text-align: center;
     margin: 0 2%;
 }
@@ -133,15 +134,17 @@ hr {
 }
 
 footer {
-    height: 459px;
-    background: url(images/Footer-Bg.png);
+    min-height: 459px;
+    background-color: #222222;
     padding: 30px 0;
     color: #cacaca;
+    border-top: 5px solid #151515;
 }
 
 .footer-col {
-    width: 25%;
-    float: left;
+    width: 24%;
+    display: inline-block;
+    vertical-align: top;
     padding: 0 2% 25px 2%;
 }
 
@@ -170,3 +173,83 @@ footer hr {
     font-size: 14px;
     margin-top: 25px;
 }
+
+/* --- MEDIA QUERIES --- */
+
+@media screen and (max-width: 1024px) {
+    
+    .wrapper {
+        width: 85%;
+    }
+    
+}
+
+@media screen and (max-width:840px) {
+    
+    .wrapper {
+        width: 90%;
+    }
+    
+    header img {
+        float: none;
+        display: block;
+        margin: 10px auto 0;
+    }
+
+    nav {
+        float: none;
+        text-align: center;
+    }
+    
+    footer {
+        height: auto;
+    }
+    
+    .footer-col {
+        width: 45%;
+        padding: 0 2%;
+        margin: 2%;
+    }
+            
+    .col {
+        width: 45%;
+        margin: 0 2% 40px 2%;
+    }
+}
+
+    @media screen and (max-width: 768px) {
+        
+        .wrapper {
+            width: 95%;
+        }
+        
+        #works h3:first-child {
+            text-align: center;
+        }
+        
+        .works-col {
+            width: 70%;
+            float: none;
+            margin: 40px 15%;
+        }
+        
+        #quote p {
+              width: 70%;
+        }
+        
+        
+    }
+
+@media screen and (max-width: 620px) {
+    
+    .footer-col {
+        width: 90%;
+        margin: 10px 5%;
+    }
+            
+    .col {
+        width: 70%;
+        margin: 30px 15%;
+    }
+    
+}   
