@@ -2,9 +2,9 @@
 
 * {
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    font-family: 'Roboto', sans-serif;
 }
 
 body {
@@ -12,14 +12,14 @@ body {
 }
 
 .clearfix:after {
+    clear: both;
     content: "";
     display: table;
-    clear: both;
 }
 
 .wrapper {
-    width: 70%;
     margin: 0 auto;
+    width: 70%;
 }
 
 /*-----Header-----*/
@@ -59,13 +59,13 @@ nav ul {
 nav ul li {
     display: inline-block;
     font-weight: 700;
-    text-transform: uppercase;
     margin-left: 25px;
+    text-transform: uppercase;
 }
 
 nav ul li a {
-    text-decoration: none;
     color: #4e4e4e;
+    text-decoration: none;
 }
 
 nav ul li a:hover {
@@ -83,11 +83,11 @@ nav ul li a:hover {
 }
 
 .col {
-    width: 20%;
     display: inline-block;
-    vertical-align: top;
-    text-align: center;
     margin: 0 2%;
+    text-align: center;
+    width: 20%;
+    vertical-align: top;
 }
 
 .col h3 {
@@ -105,19 +105,19 @@ hr {
 }
 
 .works h3:first-child {
-    text-transform: uppercase;
     padding-bottom: 20px;
+    text-transform: uppercase;
 }
 
 .works img {
-    width: 100%;
     margin-bottom: 15px;
+    width: 100%;
 }
 
 .works-col {
-    width: 30%;
     float: left;
     margin: 0 1%;
+    width: 30%;
 }
 
 .works-col p {
@@ -134,9 +134,9 @@ hr {
 .quote {
     background-color: rgba(0, 0, 0, 0.03);
     color: #a1a1a1;
-    width: 100%;
     height: 230px;
     text-align: center;
+    width: 100%;
 }
 
 .quote img {
@@ -146,37 +146,37 @@ hr {
 }
 
 .quote p {
-    width: 50%;
     margin: 0 auto;
+    width: 50%;
 }
 
 /*-----Footer-----*/
 
 footer {
-    min-height: 459px;
     background-color: #222222;
-    padding: 30px 0;
-    color: #cacaca;
     border-top: 5px solid #151515;
+    color: #cacaca;
+    min-height: 459px;
+    padding: 30px 0;
 }
 
 .footer-col {
-    width: 24%;
     display: inline-block;
-    vertical-align: top;
     padding: 0 2% 25px 2%;
+    width: 24%;
+    vertical-align: top;
 }
 
 .footer-col h3 {
-    text-transform: uppercase;
-    margin: 10px 0;
     color: #6c6c6c;
+    margin: 10px 0;
+    text-transform: uppercase;
 }
 
 .footer-col p {
-    margin: 20px 0;
-    line-height: 25px;
     font-size: 14px;
+    line-height: 25px;
+    margin: 20px 0;
 }
 
 .twitter {
@@ -210,8 +210,8 @@ footer hr {
     }
     
     header img {
-        float: none;
         display: block;
+        float: none;
         margin: 10px auto 0;
     }
 
@@ -225,14 +225,14 @@ footer hr {
     }
     
     .footer-col {
-        width: 45%;
-        padding: 0 2%;
         margin: 2%;
+        padding: 0 2%;
+        width: 45%;
     }
             
     .col {
-        width: 45%;
         margin: 0 2% 40px 2%;
+        width: 45%;
     }
 }
 
@@ -247,16 +247,14 @@ footer hr {
         }
         
         .works-col {
-            width: 70%;
             float: none;
             margin: 40px 15%;
+            width: 70%;
         }
         
         .quote p {
               width: 70%;
         }
-        
-        
     }
 
 @media screen and (max-width: 620px) {
@@ -268,18 +266,18 @@ footer hr {
     }
     
     .wrapper:first-child {
-        width: 100%;
-        padding: 0;
         margin: 0;
+        padding: 0;
+        width: 100%;
     }
     
     nav ul {
-        position: relative;
-        z-index: 9999;
         background-color: #e5e5e5;
-        width: 100%;
         height: 0;
         overflow: hidden;
+        position: relative;
+        width: 100%;
+        z-index: 9999;    
     }
     
     nav ul.open {
@@ -289,13 +287,13 @@ footer hr {
     nav ul li {
         border-top: 1px solid #9f9999;
         display: block;
-        padding: 10px 0;
         margin: 0;
+        padding: 10px 0;
     }
     
     .footer-col {
-        width: 90%;
         margin: 10px 5%;
+        width: 90%;
     }
     
     .footer-col p {
@@ -303,8 +301,7 @@ footer hr {
     }
             
     .col {
-        width: 70%;
         margin: 30px 15%;
+        width: 70%;
     }
-    
 }   
