@@ -41,7 +41,7 @@ header img {
 }
 
 .banner {
-    background: url(images/headerbg.png) no-repeat center center;
+    background: url(../images/headerbg.png) no-repeat center center;
     height:600px;
 }
 
